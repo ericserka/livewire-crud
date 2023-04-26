@@ -50,8 +50,8 @@
             <div class="pl-1 w-full">{{ $customer->email }}</div>
             <div class="pl-1 mb-4 col-span-1  w-full">{{ $customer->gender }}</div>
             <div class="pl-1 mb-4 flex text-white w-full">
-                <a href="#" wire:click.prevent="delete({{ $customer->id }})"
-                    class="bg-red-800 font-bold m-1 py-1 px-3 rounded-xl text-red-50 hover:bg-red-700 hover:text-white">
+                <a href="#" x-data wire:click.prevent="storeCostumerId({{ $customer->id }})"
+                    @click="$dispatch('toggle-modal', {'show':true})" class="btn-delete">
                     Apagar
                 </a>
                 <a href="#"
@@ -61,4 +61,21 @@
             </div>
         </div>
     @endforeach
+
+    {{ $customers->links('vendor.livewire.tailwind') }}
+
+    <x-modal size="lg" close_btn="false">
+        <x-slot:title>
+            <div class="flex">
+                <x-gmdi-delete class="w-5 h-5 text-red-800 mr-2" />
+                Delete Record
+            </div>
+            </x-slot>
+            Do you want to delete the record permanently?
+            <div class="flex mt-3">
+                <button @click="$dispatch('toggle-modal', {'show':false})" class="grow btn-cancel">Cancel</button>
+                <button wire:click="delete" @click="$dispatch('toggle-modal', {'show':false})"
+                    class="grow btn-delete">Delete</button>
+            </div>
+    </x-modal>
 </div>

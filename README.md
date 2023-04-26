@@ -94,3 +94,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   [Docs for Blade templates](https://laravel.com/docs/10.x/blade)
 
 -   [Docs for Livewire properties](https://laravel-livewire.com/docs/2.x/properties)
+
+-   [Docs for Livewire pagination](https://laravel-livewire.com/docs/2.x/pagination)
+
+    -   Publishing Livewire pagination views: `./vendor/bin/sail artisan livewire:publish --pagination`
+
+-   Creating a anonymous component (a component with only a Blade template and no class): `./vendor/bin/sail artisan make:component <NAME> --view`
+
+-   [Blade UI Kit icons](https://blade-ui-kit.com/blade-icons#search)
