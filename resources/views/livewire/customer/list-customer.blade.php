@@ -50,7 +50,7 @@
             <div class="pl-1 w-full">{{ $customer->email }}</div>
             <div class="pl-1 mb-4 col-span-1  w-full">{{ $customer->gender }}</div>
             <div class="pl-1 mb-4 flex text-white w-full">
-                <a href="#" x-data wire:click.prevent="storeCostumerId({{ $customer->id }})"
+                <a href="#" x-data wire:click.prevent="storeCustomerId({{ $customer->id }})"
                     @click="$dispatch('toggle-modal', {'show':true})" class="btn-delete">
                     Apagar
                 </a>

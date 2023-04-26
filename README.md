@@ -89,7 +89,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
     -   Creating rows using factory in tinker: `\App\Models\ModelExample::factory()->count(10)->create();`
 
--   Creating a livewire: `./vendor/bin/sail artisan make:livewire <PATH>`. Example: `./vendor/bin/sail artisan make:livewire customer.list-costumer` will create a ListCostumer.php file inside app/Http/Livewire/Customer and a list-costumer.blade.php file inside resources/views/livewire/customer.
+-   Creating a livewire: `./vendor/bin/sail artisan make:livewire <PATH>`. Example: `./vendor/bin/sail artisan make:livewire customer.list-customer` will create a ListCustomer.php file inside app/Http/Livewire/Customer and a list-customer.blade.php file inside resources/views/livewire/customer.
 
 -   [Docs for Blade templates](https://laravel.com/docs/10.x/blade)
 
