@@ -102,3 +102,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   Creating a anonymous component (a component with only a Blade template and no class): `./vendor/bin/sail artisan make:component <NAME> --view`
 
 -   [Blade UI Kit icons](https://blade-ui-kit.com/blade-icons#search)
+
+-   [Docs for Livewire input validation](https://laravel-livewire.com/docs/2.x/input-validation)
+
+-   [Docs for Laravel routing](https://laravel.com/docs/10.x/routing)
