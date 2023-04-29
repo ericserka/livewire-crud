@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('ssn');
             $table->string('birth_date');
             $table->string('email');
-            $table->string('gender');
+            $table->enum('sex', ['F', 'M']);
             $table->timestamps();
         });
     }

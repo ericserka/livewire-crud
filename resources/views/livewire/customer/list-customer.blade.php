@@ -29,7 +29,7 @@
         <div class="pl-1 text-center pt-2">SSN</div>
         <div class="pl-1 text-center pt-2">Birthdate</div>
         <div class="pl-1 text-center pt-2">Email</div>
-        <div class="pl-1 text-center pt-2">Gender</div>
+        <div class="pl-1 text-center pt-2">Sex</div>
         <div class="pl-1 text-center pt-2"> </div>
     </div>
 
@@ -48,7 +48,7 @@
             <div class="pl-1">{{ $customer->ssn }}</div>
             <div class="pl-1 w-full">{{ $customer->birth_date }}</div>
             <div class="pl-1 w-full">{{ $customer->email }}</div>
-            <div class="pl-1 mb-4 col-span-1  w-full">{{ $customer->gender }}</div>
+            <div class="pl-1 mb-4 col-span-1  w-full">{{ $customer->sex }}</div>
             <div class="pl-1 mb-4 flex text-white w-full">
                 <a href="#" x-data wire:click.prevent="storeCustomerId({{ $customer->id }})"
                     @click="$dispatch('toggle-modal', {'show':true})" class="btn-delete">

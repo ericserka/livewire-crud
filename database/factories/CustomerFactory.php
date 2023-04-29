@@ -21,7 +21,7 @@ class CustomerFactory extends Factory
             'ssn' => fake()->unique()->ssn(),
             'birth_date' => fake()->date(),
             'email' => fake()->unique()->safeEmail(),
-            'gender' => fake()->randomElement(['F', 'M'])
+            'sex' => fake()->randomElement(['F', 'M'])
         ];
     }
 }
