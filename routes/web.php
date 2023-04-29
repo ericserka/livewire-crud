@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', \App\Http\Livewire\Customer\ListCustomer::class)->name("list-customer");
 Route::get('/customer/new', \App\Http\Livewire\Customer\AddCustomer::class)->name("add-customer");
+Route::get('customer/edit/{customer}', \App\Http\Livewire\Customer\AddCustomer::class)->name("edit-customer");

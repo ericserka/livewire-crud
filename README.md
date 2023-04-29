@@ -106,3 +106,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   [Docs for Livewire input validation](https://laravel-livewire.com/docs/2.x/input-validation)
 
 -   [Docs for Laravel routing](https://laravel.com/docs/10.x/routing)
+
+-   [Docs for Laravel helpers](https://laravel.com/docs/10.x/helpers)
+
+-   [Docs for Livewire Components](https://laravel-livewire.com/docs/2.x/rendering-components)

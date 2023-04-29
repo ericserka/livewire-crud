@@ -1,7 +1,13 @@
 <div>
     <div class="w-full text-center bg-teal-800 my-5 text-white font-bold p-2 rounded-lg">
-        Listar Clientes
+        Customer List
     </div>
+    <a href="{{ route('add-customer') }}" class="btn-default">Add new customer</a>
+    @if (session()->has('success'))
+        <x-notification>
+            {{ session('success') }}
+        </x-notification>
+    @endif
 
     <div class="border-2 p-2 rounded-lg m-2">
         Filter:
@@ -52,11 +58,10 @@
             <div class="pl-1 mb-4 flex text-white w-full">
                 <a href="#" x-data wire:click.prevent="storeCustomerId({{ $customer->id }})"
                     @click="$dispatch('toggle-modal', {'show':true})" class="btn-delete">
-                    Apagar
+                    Delete
                 </a>
-                <a href="#"
-                    class="bg-blue-800 font-bold m-1 py-1 px-3 rounded-xl text-blue-50 hover:bg-blue-700 hover:text-white">
-                    Editar
+                <a href="{{ route('edit-customer', $customer->id) }}" class="btn-edit">
+                    Edit
                 </a>
             </div>
         </div>
